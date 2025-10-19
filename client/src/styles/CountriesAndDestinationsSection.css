@@ -1,0 +1,74 @@
+.countries-and-destinations {
+	display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.countries-and-destinations-header {
+	display: flex;
+	gap: 1em;
+	justify-content: space-between;
+}
+
+.countries-and-destinations-header-title {
+	font-size: var(--title-font-size);
+	text-transform: uppercase;
+	text-align: left;
+	color: white;
+}
+
+.countries-and-destinations-header-description {
+	width: 50%;
+	font-size: var(--ordinary-font-size);
+	text-align: right;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.countries-and-destinations-list-wrapper{
+	display: flex;
+	overflow-x: scroll;
+}
+
+.countries-and-destinations-list-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.countries-and-destinations-list {
+	display: flex;
+    gap: 3em;
+	z-index: -1;
+}
+
+.countrie-and-destination {	
+    display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: start;
+	height: 260px;
+	width: 390px;
+	padding: 1em;
+	background-size: cover;
+	background-position: center;
+	box-shadow: var(--background-box-shadow);
+	border-radius: 25px;
+}
+
+.countrie-and-destination h3 {
+	padding: 0.4em 1.4em;
+	background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(4px);
+	border-radius: 30px;
+	font-size: var(--ordinary-font-size);
+	color: white;
+}
+
+@media (max-width: 1100px) {
+    .countries-and-destinations-header {
+        flex-direction: column;
+    }
+   
+    .countries-and-destinations-header-description {
+        width: 100%;
+        text-align: left;
+    }
+}

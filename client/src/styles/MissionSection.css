@@ -1,0 +1,75 @@
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-top: var(--container-margin);
+    color: white;
+}
+
+.mission-title {
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.mission-quote-wrapper {
+    padding: 1.5em;
+    background-image: url("../assets/images/photo/biznes-komanda-dausaa-vysokuu-paterku-big.webp"), 
+                      linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    background-size: auto 100%, 100%;
+    background-repeat: no-repeat;
+}
+
+.mission-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1em;
+} 
+
+.mission-quote p {
+    font-size: 1rem;
+    text-align: right;
+    color: black;
+}
+
+.mission-quote h3 {
+    font-size: 0.8rem;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1100px) {
+    .mission-quote-wrapper {
+        background-position-x: -125px, 0;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .mission-quote-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 18em;
+        background-image: url("../assets/images/photo/biznes-komanda-dausaa-vysokuu-paterku-small.webp"),
+                          linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background-size: 100% auto, 100%;
+        background-position-x: 0;
+        background-position-y: 101%;
+    }
+
+    .mission-quote {
+        gap: 0.5em;
+    }
+
+    .mission-quote p {
+        font-size: 0.8rem;
+    }
+
+    .mission-quote p br {
+        display: none;
+    }
+
+    .mission-quote h3 {
+        font-size: 0.6rem;
+    }
+}

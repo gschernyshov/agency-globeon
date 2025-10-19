@@ -1,0 +1,19 @@
+.services-button {
+	padding: 0.5em 1.4em;
+	background: white;
+	border-radius: 25px;
+	font-size: var(--ordinary-font-size);
+	color: black;
+}
+
+.services-button-active {
+	background: var(--gold-gradient);
+}
+
+@media screen and (max-width: 798px) {
+    .services-button {
+        padding: 5px 12px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

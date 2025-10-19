@@ -1,0 +1,27 @@
+.advantage {
+	display: flex;
+	gap: 1em;
+}
+
+.advantage img {
+	height: 2px;
+	margin-top: 10px;
+}
+
+.advantage-description {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+}
+
+.advantage-description h3 {
+	font-size: 1.1rem;
+	text-align: left;
+	color: white;
+}
+
+.advantage-description  p {
+	font-size: var(--ordinary-font-size);
+	text-align: left;
+	color: rgba(255, 255, 255, 0.6);
+}

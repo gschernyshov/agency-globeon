@@ -1,0 +1,114 @@
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-top: 12em;
+    color: white;
+}
+
+.contacts-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contacts-header-title {
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+}
+
+.contacts-header-description {
+    font-size: var(--ordinary-font-size);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts {
+    display: flex;
+    gap: 3em;
+    align-items: start;
+}
+
+.contacts-photo {
+    width: 60%;
+    border-radius: 25px;
+}
+
+.contacts-information {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.contacts-telephone-and-email {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact {
+    font-size: var(--subtitle-font-size);
+    color: white;
+}
+
+.messengers {
+    display: flex;
+    gap: 1.5em;
+}
+
+.messenger {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.messenger span {
+    margin-right: 0.3em;
+    font-size: 1.5rem;
+}
+
+.social-network {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-network img{
+    height: var(--height-icons);
+}
+
+@media (max-width: 1100px) {
+    .contacts-wrapper {
+        padding-top: 7em;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .contacts-photo {
+        width: 100%;
+    }
+
+    .contacts-information {
+        gap: 2em;
+    }
+
+    .contacts-telephone-and-email {
+        gap: 1em;
+    }
+
+    .contact {
+        font-size: 1.5rem;
+    }
+
+    .messenger {
+        font-size: 1.2rem;
+    }
+
+    .messenger span {
+        margin-right: 0.1rem;
+    }
+
+    .social-network img { 
+        height: 25px;
+    }
+}

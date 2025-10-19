@@ -1,0 +1,30 @@
+.applications {
+	display: flex;
+	flex-direction: column;
+    gap: 2em;
+    padding: 4em 0;
+    color: white;
+}
+
+.applications-title {
+	font-size: var(--title-font-size);
+}
+
+.applications-user {
+	display: flex;
+	flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+	background: black;
+	box-shadow: var(--gold-box-shadow);
+	border-radius: 25px;
+}
+
+.applications-user h3 {
+    margin-bottom: 0.5em;
+    font-size: var(--subtitle-font-size);
+}
+
+.applications-user p {
+    font-size: var(--ordinary-font-size);
+}

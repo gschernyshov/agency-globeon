@@ -1,0 +1,40 @@
+.faq-wrapper {
+	display: flex;
+	flex-direction: column;
+    gap: 3em;
+	padding-top: var(--container-margin);
+}
+
+.faq-title {
+	font-size: var(--title-font-size);
+	color: white;
+}
+
+.faq {
+    display: flex;
+    gap: 2em;
+	align-items: start;
+}
+
+.faq-questions-answers {
+	width: 65%;
+}
+
+.faq-photo {
+	width: calc(35% - 2em);
+	border-radius: 25px;
+}
+
+@media screen and (max-width: 798px) {
+    .faq {
+		flex-direction: column;
+    }
+
+	.faq-questions-answers {
+		width: 100%;
+	}
+
+    .faq-photo {
+        width: 100%;
+    }
+}

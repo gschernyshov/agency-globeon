@@ -1,0 +1,72 @@
+.introduction {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+	align-items: center;
+	padding-top: 16em;
+	padding-bottom: 22em;	
+	background-image: url("../assets/images/photo/ben-kupke-5_b2pujZGyk-unsplash-big.webp");
+	background-size: cover;
+	background-position: center;
+	box-shadow: var(--background-box-shadow);
+    color: white;
+}
+
+.introduction-title {
+	font-size: 5rem;
+	line-height: 5rem;
+	text-align: center;
+}
+
+.introduction-description {
+	font-size: var(--ordinary-font-size);
+	text-align: center;
+}
+
+.introduction-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.introduction-button {
+	padding: 0.5em 2em;
+	background: white;
+	border-radius: 30px;
+	transition: box-shadow 0.3s;
+	font-size: var(--ordinary-font-size);
+	color: black;
+}
+
+.introduction-button-feedback {
+	background: var(--gold-gradient);
+}
+
+button.introduction-button-feedback:hover {
+	box-shadow: inset 0 -200px 100px -100px #B3872840;
+}
+
+@media screen and (max-width: 798px) {
+    .introduction {
+        padding: 14em 1em 14em 1em;
+		background-image: url("../assets/images/photo/ben-kupke-5_b2pujZGyk-unsplash-medium.webp");
+	}
+
+	.introduction-title {
+		font-size: 3.8rem;
+        line-height: 4.2rem;
+	}
+
+	.introduction-description {
+		width: 80%;
+	}
+
+	.introduction-button {
+		padding: 0.45em 1.4em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.introduction {
+		background-image: url("../assets/images/photo/ben-kupke-5_b2pujZGyk-unsplash-small.webp");
+	}
+}

@@ -1,0 +1,118 @@
+.company-information-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: var(--container-padding);
+    padding-top: 12em;
+    padding-bottom: 12em;
+    background-image: url("../assets/images/photo/doroznyi-nabor-sverhu-s-kartoi-i-kameroi-big.webp");
+    background-size: cover;
+    background-position: center;
+	box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0.9);;
+    color: white;
+}
+
+.company-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    width: 50%;
+}
+
+.company-information-title {
+    font-size: 6rem;
+    line-height: 6.5rem;
+    text-align: center;
+}
+
+.company-information-text-agency {
+    margin-left: -75px;
+}
+
+.company-information-title .gold-gradient {
+    margin-right: -75px;
+}
+
+.company-information-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.company-information-description p {
+    font-size: var(--ordinary-font-size);
+    text-align: center;
+}
+
+.company-information-description a {
+    display: block;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    border-image-slice: 1;
+    font-family: var(--other-font);
+    font-size: var(--ordinary-font-size);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.company-information-container-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.company-information-photo {
+    width: 80%;
+}
+
+@media (max-width: 1100px) {
+    .company-information-title {
+        font-size: 4.2rem;
+        line-height: 4.6rem;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .company-information-wrapper {
+        flex-direction: column-reverse;
+        gap: 4em;
+        padding-top: 10em;
+        padding-bottom: 8em;
+        background-image: url("../assets/images/photo/doroznyi-nabor-sverhu-s-kartoi-i-kameroi-medium.webp");
+    }
+
+    .company-information-container-photo {
+        width: 100%;
+    }
+
+    .company-information-photo {
+        width: 100%;
+    }
+
+    .company-information {
+        width: 100%;
+    }
+
+    .company-information-title {
+        font-size: 3.6rem;
+        line-height: 3.75rem;
+    }
+
+    .company-information-text-agency {
+        margin-left: -50px;
+    }
+
+    .company-information-title .gold-gradient {
+        margin-right: -50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.company-information-wrapper {
+		background-image: url("../assets/images/photo/doroznyi-nabor-sverhu-s-kartoi-i-kameroi-small.webp");
+	}
+}
+

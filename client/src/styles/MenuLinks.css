@@ -1,0 +1,12 @@
+.menu-item a{
+    cursor: pointer;
+	font-size: 0.9em;
+    color: white;
+}
+
+.menu-item a.active,
+.menu-item a:hover {
+	background: var(--gold-gradient);
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
